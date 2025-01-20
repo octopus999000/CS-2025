@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int start, koniec, suma;
+
+	cout << "Podaj poczatek: ";
+	cin >> start;
+	cout << "Podaj koniec: ";
+	cin >> koniec;
+		
+	if (koniec < start)
+	{
+		do
+		{
+			cout << "Podaj poczatek: ";
+			cin >> start;
+			cout << "Podaj koniec: ";
+			cin >> koniec;
+		} while (koniec < start);
+	}
+
+	suma = 0;
+
+	do
+	{
+		suma = suma + start;
+		start = start + 1;
+		
+	} while (start <= koniec);
+
+	cout << suma;
+}
