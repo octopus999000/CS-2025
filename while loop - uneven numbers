@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int start, koniec;
+
+	cout << "Podaj poczatek: ";
+	cin >> start;
+	cout << "Podaj koniec: ";
+	cin >> koniec;
+		
+	if (koniec < start)
+	{
+		do
+		{
+			cout << "Podaj poczatek: ";
+			cin >> start;
+			cout << "Podaj koniec: ";
+			cin >> koniec;
+		} while (koniec < start);
+	}
+
+	if (start % 2 == 1)
+	{
+		do
+		{
+			cout << start << "\t";
+			start = start + 2;
+		} while (start <= koniec);
+	}
+	else
+	{
+		start = start + 1;
+		do
+		{
+			cout << start << "\t";
+			start = start + 2;
+		} while (start <= koniec);
+	}
+
+
+}
