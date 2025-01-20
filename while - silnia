@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+
+{
+int liczba, iloczyn, a;
+
+cin >> liczba;
+a = 1;
+iloczyn = a;
+
+while (a < liczba)
+{
+	a = a + 1;
+	iloczyn = iloczyn * a;
+}
+
+cout << iloczyn;
+}
+
